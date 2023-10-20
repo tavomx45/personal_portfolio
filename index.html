@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+        <!--CSS-->  
+        <link rel="stylesheet" href="style.css">
+
+        <!--Metadatos-->
+        <meta charset="utf-8">
+        <meta name="author" content="Bryan Gustavo Paredes">
+        <meta name="description" content="Portafolio Personal">
+        <meta name="keywords" content="Data Science, Machine Learning, Automotive Engineering">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Titulo-->
+        <title>Gustavo Paredes | Personal Portfolio</title>
+        <!--Favicon-->
+        <link rel="icon" href="images/icono.png" type="image/x-icon">
+
+        <!--Tipos de letra-->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Dancing+Script:wght@600&family=Space+Grotesk&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Dancing+Script:wght@600&family=Open+Sans:wght@500&family=Space+Grotesk&display=swap" rel="stylesheet">
+        
+        <!--iconos-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      
+    </head>
+    
+    <body>
+      
+      <!--Barra de Navegacion-->
+      <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/imagen1.png" width="70" alt="Logo de la Pagina">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-toggler">
+            <ul class="navbar-nav d-flex justify-content-center align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#sobre-mi">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contacto">Contact</a>
+              </li>
+          </div>
+          <a href="" target="_blank" rel="">
+            <button id="descargarPDF" type="submit">Download CV</button>
+            <script>
+              document.getElementById('descargarPDF').addEventListener('click', () => {
+                  const link = document.createElement('a');
+                  link.href = 'ruta_del_archivo.pdf';  // Reemplaza 'ruta_del_archivo.pdf' con la ruta de tu archivo PDF
+                  link.download = 'nombre_del_archivo.pdf';  // Reemplaza 'nombre_del_archivo.pdf' con el nombre que deseas para el archivo
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+              });
+          </script>
+          </a>
+
+        </div>
+      </nav>
+      
+      <!--Seccion Principal o Hero-->
+      <section class="hero align-items-stretch">
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+          <img src="images/foto5_cortada.png" alt="Profile Image" id="foto-perfil">
+          <h1>Hello, I am Bryan Gustavo Paredes</h1>
+        </div>
+        <div class="hero-secundaria d-flex flex-md-row flex-sm-column justify-content-center align-items-center">
+          <h2>Automotive Engineer</h2>
+          <h2>Machine Learning Engineer</h2>
+          <h2>Data Scientist</h2>
+        </div>
+
+        </div>
+      </section>
+
+      <!--Tecnologias-->
+      <section class="tecnologias">
+        <div class="contenedor">
+          <h2 class="seccion-titulo">What Technologies Do I Use?</h2>
+          <hr>
+          <div class="logos-tecnologias d-flex flex-md-row flex-sm-column justify-content-center align-items-center">
+            <img src="images/icons/icons8-python.svg" alt="Python Logo">
+            <img src="images/icons/icons8-matlab.svg" alt="Matlab Logo">
+            <img src="images/icons/icons8-r-project.svg" alt="R Logo">
+            <img src="images/icons/icons8-sql-48.png" alt="SQL logo">
+            <img src="images/icons/icons8-numpy.svg" alt="Numpy Logo">
+            <img src="images/icons/icons8-pandas.svg" alt="Pandas Logo">
+            <img src="images/icons/icons8-tensorflow.svg" alt="tnsorflow logo">
+            <img src="images/icons/icons8-html5.svg" alt="html logo">
+            <img src="images/icons/icons8-css.svg" alt="css logo">
+
+          </div>
+        </div>
+
+      </section>
+      <!--Seccion sobre mi-->
+      <section id="sobre-mi" class="sobre-mi seccion-oscura">
+        <div class="contenedor2" >
+          <h2 class="seccion-titulo">What About Me?</h2>
+          <hr>
+          <p class="seccion-texto">My name is Bryan Gustavo Paredes, I have a Bachelor's Degree in Automotive Engineering and a Master's Degree in Mathematical Methods and Numerical Simulation in Engineering.</p>
+          <p class="seccion-texto">I am passionate about the topics of Artificial Intelligence and Machine Learning focused of ​​​engineering field. I also have experience in various tools for model development. Finally, I have very good skills in Mathematics, Statistics and Design of Experiments.</p>
+          <p class="seccion-texto">
+          I am a creative problem solver and have a strong interest in applying my skills to solving real problems. I am looking for a position where I can use my knowledge to make a positive impact in the world.
+          </p>
+          <p class="seccion-texto">Right now I am the founder and instructor at <a target="_blank" rel="noopener noreferrer" href="https://skillfac.com">skillfac</a>, an education platform with courses on topics related to engineering and science.</p>
+        </div>
+      </section>
+
+      <!--Educacion-->
+      <section class="educacion seccion-clara">
+        <h2 class="seccion-titulo">My Education</h2>
+        <hr id="separador-educacion">
+        <div class="container text-center">
+          <div class="row">
+            <!--college-->
+            <div class="columna col-12 col-md-6">
+              <h3>College</h3>
+              <p>Technical of North University</p>
+              <p>Faculty of Engineering in Applied Sciences</p>
+              <p>Bachelor's Degree in Automotive Engineering</p>
+              <hr>
+              <h4>What did I learn?</h4>
+              <ul class="lista-personalizada">
+                <li class="elemento-lista">Automotive Science and Technology</li>
+                <li class="elemento-lista">Basic Mathematics and Physics for Engineering</li>
+                <li class="elemento-lista">
+                Vehicles Electronics and Mechatronics
+                </li >
+                <li class="elemento-lista">Programming Fundamentals</li>
+
+              </ul>
+            </div>
+            <!--master-->
+            <div class="columna col-12 col-md-6">
+              <h3>Master</h3>
+              <p>Polytechnic Salesian University</p>
+              <p>Master's Degree in Mathematical Methods and Numerical Simulation in Engineering</p>
+              <hr>
+              <h4>What did I learn?</h4>
+              <ul class="lista-personalizada">
+                <li class="elemento-lista">Advanced Programming</li>
+                <li class="elemento-lista">Advanced Mathematics and Statistics</li>
+                <li class="elemento-lista">
+                Process Simulation and Optimization
+                </li >
+                <li class="elemento-lista">Advanced Thermodynamics and Electromagnestism</li>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!--Seccion Proyectos-->
+      <section id="proyectos" class="proyectos seccion-clara d-flex flex-column">
+        <h2 class="seccion-titulo">My Projects</h2>
+        <hr>
+        <h3>These are some projects that show my experience.</h3> 
+        <!--Galeria de Proyectos-->
+        <div class="container text-center proyectos-contenedor">
+          <div class="row">
+            <!--Proyecto 1-->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="proyecto">
+                <img src="images/proyectos/TSLImage.jpg" alt="Travelling Salesman Problem Solution">
+                <div class="overlay">
+                  <p>Genetic Algorithms: Travel Salesman Problem</p>
+                  <div class="iconos-contenedor">
+                    <a href="https://github.com/tavomx45/Travelling-Salesman-Problem-Capitals-of-the-provinces-of-Ecuador" target="_blank" rel="noopener noreferrer">
+                      <i class="bi bi-github"></i>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!--Boton mas-->
+        <a href="https://github.com/tavomx45" target="_blank"   rel="noopener noreferrer">
+          <button type="button" class="btn btn-info">
+            See More Projects
+            <i class="bi bi-arrow-right-circle"></i>
+          <button>
+        </a>
+      </section>
+
+      <!--Seccion Contacto-->
+      <section id="contacto" class="contacto seccion-oscura">
+        <div class="container">
+          <div class="container rectangulo text-center d-flex justify-content-evenly">
+            <div class="row">
+              <div class="col-12 col-md-4 seccion-titulo">
+                Contact Me!
+              </div>
+              <div class=" seccion-texto col-md-4 description">
+                Talk with me so we can work together.
+              </div>
+              <div class="col-12 col-md-4">
+                <a href="mailto:bryangustavoparedes@gmail.com">
+                  <button type="button">
+                    Contact
+                    <i class="bi bi-envelope-check"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Pie de pagina-->
+      <footer class="seccion-oscura d-flex align-items-center justify-content-center flex-column">
+        <img class="footer-logo" alt="Logo del Portafolio" src="images/icono.png">
+        <p class="footer-texto text-center">If you ask me something that I don't know, I will do what is necessary to investigate and give you an answer.
+        <br>I invite you to work together.</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+          <a href="https://www.linkedin.com/in/bryangustavoparedesballesteros/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/tavomx45/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/BryanGustavoParedes/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-facebook"></i>
+          </a> 
+          <a href="https://github.com/tavomx45" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="https://wa.me/593997903247?text=Hello%20Gustavo%20I'm%20interested%20in%20talking%20with%20you" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-whatsapp"></i>
+          </a>           
+          <a href="mailto:bryangustavoparedes@gmail.com"target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-envelope"></i>
+          </a>   
+        </div>
+        <div class="Copyright">Created by Bryan Gustavo Paredes (2023) &#169;</div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+    </body>
+</html>
