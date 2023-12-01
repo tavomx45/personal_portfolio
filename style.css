@@ -17,17 +17,19 @@
 
 /*Boton descargar pdf*/
 #descargarPDF {
-    background-color: #137e8e; /* Fondo blanco */
-    color: #000000; /* Texto negro */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 10px 20px; /* Espaciado interno */
-    font-size: 16px; /* Tamaño de fuente */
+    background-color: #001f3f; /* Azul marino */
+    color: #ffffff; /* Texto blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 12px 24px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de fuente */
     cursor: pointer; /* Cambia el cursor al pasar por encima */
     text-decoration: none; /* Sin subrayado en el texto */
+    border: 2px solid #001f3f; /* Borde sólido */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
 }
 
 #descargarPDF:hover {
-    background-color: #f0f0f0; /* Cambia el color de fondo al pasar por encima */
+    background-color: #003366; /* Cambia el color al pasar por encima */
 }
 /*Estilos Generales*/
 
