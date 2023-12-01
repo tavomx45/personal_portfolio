@@ -66,14 +66,10 @@
           <a href="" target="_blank" rel="">
             <button id="descargarPDF" type="submit">Download CV</button>
             <script>
-              document.getElementById('descargarPDF').addEventListener('click', () => {
-                  const link = document.createElement('a');
-                  link.href = 'https://drive.google.com/drive/folders/1C8_IsAYH_VEaA3-NuiaxVFYMbQ7et2Y4?usp=sharing'; link.target="_blank";
-                  link.rel="noopener noreferrer";  // Reemplaza 'ruta_del_archivo.pdf' con la ruta de tu archivo PDF
-                  document.body.appendChild(link);
-                  link.click();
-                  document.body.removeChild(link);
-              });
+                document.getElementById('descargarPDF').addEventListener('click', () => {
+                const link = 'https://drive.google.com/drive/folders/1C8_IsAYH_VEaA3-NuiaxVFYMbQ7et2Y4?usp=sharing';
+                window.open(link, '_blank', 'noopener noreferrer');
+                });
           </script>
           </a>
 
