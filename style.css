@@ -16,20 +16,22 @@
   }
 
 /*Boton descargar pdf*/
-#descargarPDF {
+#descargarPDF.btn-primary {
     background-color: #001f3f; /* Azul marino */
     color: #ffffff; /* Texto blanco */
+    border: 2px solid #001f3f; /* Borde sólido */
     border-radius: 8px; /* Bordes redondeados */
     padding: 12px 24px; /* Espaciado interno */
     font-size: 18px; /* Tamaño de fuente */
     cursor: pointer; /* Cambia el cursor al pasar por encima */
     text-decoration: none; /* Sin subrayado en el texto */
-    border: 2px solid #001f3f; /* Borde sólido */
     transition: background-color 0.3s ease; /* Transición suave del color de fondo */
 }
 
-#descargarPDF:hover {
+#descargarPDF.btn-primary:hover {
     background-color: #003366; /* Cambia el color al pasar por encima */
+    border-color: #003366; /* Cambia el color del borde al pasar por encima */
+    color: #ffffff; /* Cambia el color del texto al pasar por encima */
 }
 /*Estilos Generales*/
 
