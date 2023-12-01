@@ -17,9 +17,8 @@
 
 /*Boton descargar pdf*/
 #descargarPDF {
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #137e8e; /* Fondo blanco */
     color: #000000; /* Texto negro */
-    border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
     padding: 10px 20px; /* Espaciado interno */
     font-size: 16px; /* Tamaño de fuente */
