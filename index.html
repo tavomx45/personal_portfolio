@@ -63,20 +63,9 @@
                 <a class="nav-link" href="#contacto">Contact</a>
               </li>
           </div>
-          <a href="" target="_blank" rel="">
-            <button id="descargarPDF" type="submit">Download CV</button>
-            <script>
-              document.getElementById('descargarPDF').addEventListener('click', () => {
-                  const link = document.createElement('a');
-                  link.href = 'https://drive.google.com/drive/folders/1C8_IsAYH_VEaA3-NuiaxVFYMbQ7et2Y4?usp=sharing'; link.target="_blank";
-                  link.rel="noopener noreferrer";  // Reemplaza 'ruta_del_archivo.pdf' con la ruta de tu archivo PDF
-                  link.download = 'nombre_del_archivo.pdf';  // Reemplaza 'nombre_del_archivo.pdf' con el nombre que deseas para el archivo
-                  document.body.appendChild(link);
-                  link.click();
-                  document.body.removeChild(link);
-              });
-          </script>
-          </a>
+            <a href="https://drive.google.com/drive/folders/1C8_IsAYH_VEaA3-NuiaxVFYMbQ7et2Y4?usp=drive_link" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="descargarPDF">
+              Download CV
+            </a>
 
         </div>
       </nav>
@@ -256,7 +245,7 @@
         <p class="footer-texto text-center">If you ask me something that I don't know, I will do what is necessary to investigate and give you an answer.
         <br>I invite you to work together.</p>
         <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-          <a href="https://www.linkedin.com/in/bryangustavoparedesballesteros/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/bgparedesb/" target="_blank" rel="noopener noreferrer">
             <i class="bi bi-linkedin"></i>
           </a>
           <a href="https://www.instagram.com/tavomx45/" target="_blank" rel="noopener noreferrer">
