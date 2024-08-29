@@ -71,6 +71,8 @@ h1 {
     font-size: 3.5rem;
     padding: 15px 0;
     font-family: 'Dancing Script', cursive;
+    justify-content: center;
+    text-align: center;
 }
 
 .seccion-texto {
