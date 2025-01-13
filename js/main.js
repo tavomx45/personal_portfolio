@@ -177,7 +177,13 @@
 		// Toggle animation on hamburger
 		this.classList.toggle("open");
 	});
-
+	
+	$(".nav-links a").click(function () {
+		$(".nav-links").removeClass("active");
+		// Remove the 'open' class from the hamburger to reset it
+		document.querySelector(".hamburger").classList.remove("open");
+	});
+	
 
 	/*---------------------------------------------------- */
   	/* Smooth Scrolling
