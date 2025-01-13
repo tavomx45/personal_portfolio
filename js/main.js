@@ -137,53 +137,45 @@
 	/*-----------------------------------------------------*/
   	/* Navigation Menu
    ------------------------------------------------------ */  
-   var toggleButton = $('.menu-toggle'),
-       nav = $('.main-navigation');
+   /*----------------------------------------------------*/
+    /* Navigation Bar
+    ------------------------------------------------------*/
+    $(document).ready(function () {
+        // Smooth scrolling
+        $(".smoothscroll").click(function (e) {
+            e.preventDefault();
+            $("html, body").animate(
+                {
+                    scrollTop: $($(this).attr("href")).offset().top - 50 // Offset for navbar
+                },
+                500
+            );
+        });
 
-   // toggle button
-   toggleButton.on('click', function(e) {
+        // Highlight the active section link
+        $(window).on("scroll", function () {
+            let scrollPos = $(window).scrollTop();
+            $(".smoothscroll").each(function () {
+                let section = $($(this).attr("href"));
+                if (
+                    section.position().top - 60 <= scrollPos &&
+                    section.position().top + section.height() > scrollPos
+                ) {
+                    $(".smoothscroll").removeClass("active");
+                    $(this).addClass("active");
+                }
+            });
+        });
+    });
 
-		e.preventDefault();
-		toggleButton.toggleClass('is-clicked');
-		nav.slideToggle();
-
-	});
-
-   // nav items
-  	nav.find('li a').on("click", function() {   
-
-   	// update the toggle button 		
-   	toggleButton.toggleClass('is-clicked'); 
-   	// fadeout the navigation panel
-   	nav.fadeOut();   		
-   	     
-  	});
-
-
-   /*---------------------------------------------------- */
-  	/* Highlight the current section in the navigation bar
-  	------------------------------------------------------ */
-	var sections = $("section"),
-	navigation_links = $("#main-nav-wrap li a");	
-
-	sections.waypoint( {
-
-       handler: function(direction) {
-
-		   var active_section;
-
-			active_section = $('section#' + this.element.id);
-
-			if (direction === "up") active_section = active_section.prev();
-
-			var active_link = $('#main-nav-wrap a[href="#' + active_section.attr("id") + '"]');			
-
-         navigation_links.parent().removeClass("current");
-			active_link.parent().addClass("current");
-
-		}, 
-
-		offset: '25%'
+    /*----------------------------------------------------*/
+    /* Hamburger Button
+    ------------------------------------------------------*/
+    document.querySelector(".hamburger").addEventListener("click", function () {
+		const navLinks = document.querySelector(".nav-links");
+		navLinks.classList.toggle("active");
+		// Toggle animation on hamburger
+		this.classList.toggle("open");
 	});
 
 
