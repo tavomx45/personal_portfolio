@@ -1387,7 +1387,7 @@ header {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 	gap: 20px;
-	padding: 20px;
+	padding: 10px;
 	background-color: #fff;
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -1397,20 +1397,20 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 10px;
+	padding: 5px;
 	background-color: #eaeaea;
 	border-radius: 8px;
 	transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .grid-item img {
-	max-width: 80%;
-	max-height: 80%;
+	width: fit-content;
+	height: fit-content;
 }
 
 .grid-item:hover {
 	transform: scale(1.1);
-	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 .button-section {
