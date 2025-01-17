@@ -2037,105 +2037,107 @@ header {
 
 /** 
  * ===================================================================
- * 16. stats - (_layout.scss)
+ * 16. certifications - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
 
 #certifications {
-    background: #990047;
-    color: white;
-    padding: 6rem 0;
-    text-align: center;
+	background: #f9f9f9;
+	padding-top: 6rem; /* Reducido para dispositivos pequeños */
+	padding-bottom: 6rem;
+	text-align: center;
+	max-height: fit-content;
 }
 
-#certifications h2 {
-    font-size: 2.8rem;
-    color: white;
-    margin-bottom: 3rem;
-    font-family: "Poppins", sans-serif;
+#certifications .section-intro {
+	margin-bottom: 2rem;
+}
+
+#certifications .section-intro h1 {
+	font-family: "poppins-semibold", serif;
+	font-size: 2.4rem; /* Ajustado para dispositivos pequeños */
+	color: #313131;
+	line-height: 1.3;
+	margin-bottom: 1rem;
+}
+
+#certifications .section-intro h5 {
+	color: #FF0077;
+	font-size: 1.4rem; /* Reducido para dispositivos pequeños */
+	line-height: 1.5;
+	margin-bottom: 0.5rem;
+	letter-spacing: .3rem;
 }
 
 .certification-list {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
 }
 
 .certification-item {
-    background: transparent;
-    padding: 2rem;
-    border-radius: 12px;
-    width: 280px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
+	background: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	padding: 2rem;
+	width: 280px; /* Ajuste del ancho para mejor escalabilidad */
+	height: auto;
+	text-align: left;
+	transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .certification-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+	transform: scale(1.05);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-.badge-icon {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 1rem;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid white;
-}
-
-.certification-item h4 {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    color: rgba(255, 255, 255, 0.7);
+.certification-item h3 {
+	font-family: "poppins-bold", sans-serif;
+	font-size: 1.6rem; /* Reducido para dispositivos pequeños */
+	color: #313131;
+	margin-bottom: 1rem;
 }
 
 .certification-item p {
-    font-size: 1.2rem;
-    color: rgba(255, 255, 255, 0.7);
+	font-family: "poppins-regular", sans-serif;
+	font-size: 1.2rem; /* Reducido para dispositivos pequeños */
+	color: #888888;
+	line-height: 1.6;
 }
 
-/*/ CSS para animación*/
-.certification-item {
-	opacity: 0;
-	transform: translateY(20px);
-	transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
+@media only screen and (max-width: 768px) {
+	.certification-list {
+		flex-direction: column; /* Columna en pantallas medianas */
+		align-items: center;
+	}
 
-.certification-item.visible {
-	opacity: 1;
-	transform: translateY(0);
-}
-/**
- * responsive:
- * stats
- * -------------------------------------------------------------------
- */
-@media only screen and (max-width:1024px) {
-	#stats .stat:nth-child(n) {
-		border-left: 1px solid rgba(255, 255, 255, 0.12);
-		padding-bottom: 1.5rem;
-	}
-	#stats .stat:nth-child(3n+1) {
-		border: none;
-	}
-}
-@media only screen and (max-width:768px) {
-	#stats .stat:nth-child(n) {
-		border-left: 1px solid rgba(255, 255, 255, 0.12);
-	}
-	#stats .stat:nth-child(2n+1) {
-		border: none;
-	}
-}
-@media only screen and (max-width:600px) {
-	#stats .stat:nth-child(n) {
-		border: none;
+	.certification-item {
+		max-width: 768px;
 	}
 }
 
+@media only screen and (max-width: 480px) {
+	#certifications {
+		padding-top: 4rem;
+		padding-bottom: 4rem;
+		max-width: 480px;
+	}
+
+	#certifications .section-intro h1 {
+		font-size: 2rem; /* Escalado para pantallas pequeñas */
+	}
+
+	.certification-list {
+		flex-direction: column; /* Forzamos una columna */
+	}
+
+	.certification-item {
+		width: fit-content; /* Ocupa el 90% del ancho de la pantalla */
+		padding: 1.5rem; /* Reducido para mejor visualización */
+	}
+}
 
 /** 
  * ===================================================================

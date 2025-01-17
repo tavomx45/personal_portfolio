@@ -63,28 +63,16 @@
 	  $(this).parent().fadeOut(500);
 	});	
 
-
-	/*----------------------------------------------------- */
-	/* Stat Counter
-  	------------------------------------------------------- */
-	  const certificationsSection = document.querySelector("#certifications");
-	  const certificationItems = document.querySelectorAll(".certification-item");
-	  
-	  const observer = new IntersectionObserver(
-		(entries) => {
-		  entries.forEach((entry) => {
-			if (entry.isIntersecting) {
-			  entry.target.classList.add("visible");
-			}
+	document.addEventListener("DOMContentLoaded", function () {
+		// Add interactive features or modal functionality if needed
+		const certificationModals = document.querySelectorAll(".overlay");
+		certificationModals.forEach((modal) => {
+		  modal.addEventListener("click", (event) => {
+			event.preventDefault();
+			alert("More details about this certification will be available soon!");
 		  });
-		},
-		{ threshold: 0.1 }
-	  );
-	  
-	  certificationItems.forEach((item) => {
-		observer.observe(item);
+		});
 	  });
-	  
 
 	/*---------------------------------------------------- */
 	/*	Masonry
