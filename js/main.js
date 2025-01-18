@@ -60,8 +60,8 @@
 	/* Alert Boxes
   	------------------------------------------------------- */
 	//$('.alert-box').on('click', '.close', function() {
-	 // $(this).parent().fadeOut(500);
-	});	
+	// $(this).parent().fadeOut(500);
+	//});	
 
 	// document.addEventListener("DOMContentLoaded", function () {
 	// 	// Add interactive features or modal functionality if needed
