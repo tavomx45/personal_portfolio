@@ -90,7 +90,7 @@ a, a:visited {
 	transition: all 0.3s ease-in-out;
 }
 a:hover, a:focus, a:active {
-	color: #FF0077;
+	color: #00BFFF;
 	outline: 0;
 }
 
@@ -301,7 +301,7 @@ ul.disc li::before {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: #FF0077;
+	background: #00BFFF;
 	position: absolute;
 	left: -17px;
 	top: 11px;
@@ -309,7 +309,7 @@ ul.disc li::before {
 }
 dt {
 	margin: 0;
-	color: #FF0077;
+	color: #00BFFF;
 }
 dd {
 	margin: 0 0 0 2rem;
@@ -429,7 +429,7 @@ img.pull-left {
 	display: none;
 }
 .pace .pace-progress {
-	background: #FF0077;
+	background: #00BFFF;
 	position: fixed;
 	z-index: 900;
 	top: 0;
@@ -472,7 +472,7 @@ img.pull-left {
 	border-top: 11px solid rgba(255, 255, 255, 0.1);
 	border-right: 11px solid rgba(255, 255, 255, 0.1);
 	border-bottom: 11px solid rgba(255, 255, 255, 0.1);
-	border-left: 11px solid #FF0077;
+	border-left: 11px solid #00BFFF;
 	-webkit-animation: load 1.1s infinite linear;
 	animation: load 1.1s infinite linear;
 	display: block;
@@ -594,8 +594,8 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-	color: #cc005f;
-	border-bottom: 1px solid #FF0077;
+	color: #00BFFF;
+	border-bottom: 1px solid #00BFFF;
 }
 label, legend {
 	font-family: "poppins-bold", sans-serif;
@@ -736,8 +736,8 @@ button.stroke.large, .button.stroke.large {
 	line-height: 5.4rem !important;
 }
 button.stroke:hover, .button.stroke:hover {
-	border: 3px solid #FF0077;
-	color: #FF0077;
+	border: 3px solid #00BFFF;
+	color: #00BFFF;
 }
 button::-moz-focus-inner, input::-moz-focus-inner {
 	border: 0;
@@ -925,7 +925,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #252525;
 }
 .stats-tabs li a:hover {
-	color: #FF0077;
+	color: #00BFFF;
 }
 .stats-tabs li a em {
 	display: block;
@@ -964,7 +964,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-bottom: 1.2rem;
 }
 .section-intro h5 {
-	color: #FF0077;
+	color:#00BFFF;
 	font-size: 1.6rem;
 	line-height: 1.875;
 	margin-bottom: 0.3rem;
@@ -1049,7 +1049,7 @@ header {
 
 .nav-links a.active,
 .nav-links a:hover {
-    color: #FF0077;
+    color: #00BFFF;
     background-color: #ebebeb;
     border-radius: 5px;
 }
@@ -1167,7 +1167,7 @@ header {
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .intro-content h5 {
-	color: #cc005f;
+	color: #00BFFF;
 	font-family: "poppins-bold", sans-serif;
 	font-size: 2.3rem;
 	line-height: 1.565;
@@ -1214,7 +1214,7 @@ header {
 	letter-spacing: .25rem;
 }
 .intro-content .button:hover, .intro-content .button:focus {
-	border-color: #cc005f;
+	border-color: #00BFFF;
 }
 .intro-content .button::after {
 	display: inline-block;
@@ -1246,7 +1246,7 @@ header {
 	color: #FFFFFF;
 }
 .intro-social li a:hover, .intro-social li a:focus {
-	color: #cc005f;
+	color: #00BFFF;
 }
 
 /**
@@ -1488,7 +1488,7 @@ header {
 	text-align: center;
 }
 #resume .resume-header h2 {
-	color: #FF0077;
+	color: #00BFFF;
 }
 
 #resume .resume-timeline {
@@ -1815,7 +1815,7 @@ header {
 	border-right: 1px solid rgba(200, 200, 200, 0.1);
 }
 .popup-modal .link-box a:hover {
-	background: #cc005f;
+	background: #00BFFF;
 	border: none;
 }
 @media only screen and (max-width:600px) {
@@ -1981,7 +1981,7 @@ header {
 	color: white;
 }
 #services .section-intro h5 {
-	color: #FF0077;
+	color: #00BFFF;
 }
 #services .section-intro p {
 	color: rgba(255, 255, 255, 0.7);
@@ -2003,7 +2003,7 @@ header {
 }
 .services-list .icon i {
 	font-size: 5.4rem;
-	color: #FF0077;
+	color: #00BFFF;
 }
 .services-list h3 {
 	color: #FFFFFF;
@@ -2031,7 +2031,7 @@ header {
 	background: #FFFFFF;
 }
 .owl-theme .owl-controls .owl-page.active span {
-	background: #FF0077;
+	background: #00BFFF;
 }
 
 
@@ -2063,7 +2063,7 @@ header {
 }
 
 #certifications .section-intro h5 {
-	color: #FF0077;
+	color: #00BFFF;
 	font-size: 1.4rem; /* Reducido para dispositivos pequeños */
 	line-height: 1.5;
 	margin-bottom: 0.5rem;
@@ -2154,7 +2154,7 @@ header {
 	color: white;
 }
 #contact .section-intro h5 {
-	color: #FF0077;
+	color: #00BFFF;
 }
 #contact .section-intro p {
 	color: rgba(255, 255, 255, 0.7);
@@ -2207,7 +2207,7 @@ header {
 	padding: 0 2rem;
 	margin: 0;
 	color: #FFFFFF;
-	background: #FF0077;
+	background: #00BFFF;
 }
 #contact form .form-field label::after {
 	position: absolute;
@@ -2216,7 +2216,7 @@ header {
 	margin-top: -6px;
 	border-top: 5px solid transparent;
 	border-bottom: 5px solid transparent;
-	border-right: 5px solid #FF0077;
+	border-right: 5px solid #00BFFF;
 	content: "";
 }
 #contact input[type="text"],
@@ -2238,7 +2238,7 @@ header {
 #contact input[type="text"]:focus,
 #contact input[type="password"]:focus,
 #contact input[type="email"]:focus {
-	border-color: #FF0077;
+	border-color: #00BFFF;
 	color: #FFFFFF;
 }
 #contact textarea {
@@ -2246,7 +2246,7 @@ header {
 	padding: 1.8rem 2rem;
 }
 #contact textarea:focus {
-	border-color: #FF0077;
+	border-color: #00BFFF;
 	color: #FFFFFF;
 }
 #contact button.submitform {
@@ -2258,11 +2258,11 @@ header {
 	padding: 0 3rem;
 	margin-top: 4.8rem;
 	width: 100%;
-	background: #FF0077;
+	background:#00BFFF;
 	color: #FFFFFF;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
-	background: #cc005f;
+	background: #00BFFF;
 }
 #message-warning, #message-success {
 	display: none;
@@ -2276,7 +2276,7 @@ header {
 	color: #fa0003;
 }
 #message-success {
-	color: #FF0077;
+	color: #00BFFF;
 }
 #message-warning i, #message-success i {
 	margin-right: 10px;
@@ -2321,7 +2321,7 @@ header {
 	color: #FFFFFF;
 }
 .contact-info h5 {
-	color: #FF0077;
+	color: #00BFFF;
 }
 
 /**
@@ -2395,7 +2395,7 @@ footer a, footer a:visited {
 	color: #FFFFFF;
 }
 footer a:hover, footer a:focus {
-	color: #FF0077;
+	color: #00BFFF;
 }
 footer .row {
 	max-width: 900px;
@@ -2474,7 +2474,7 @@ footer .copyright span:last-child::after {
 	width: 6rem;
 	line-height: 6.6rem;
 	text-align: center;
-	background: #cc005f;
+	background: #00BFFF;
 	color: #FFFFFF;
 	text-align: center;
 	text-transform: uppercase;
