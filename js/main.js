@@ -63,16 +63,16 @@
 	  $(this).parent().fadeOut(500);
 	});	
 
-	document.addEventListener("DOMContentLoaded", function () {
-		// Add interactive features or modal functionality if needed
-		const certificationModals = document.querySelectorAll(".overlay");
-		certificationModals.forEach((modal) => {
-		  modal.addEventListener("click", (event) => {
-			event.preventDefault();
-			alert("More details about this certification will be available soon!");
-		  });
-		});
-	  });
+	// document.addEventListener("DOMContentLoaded", function () {
+	// 	// Add interactive features or modal functionality if needed
+	// 	const certificationModals = document.querySelectorAll(".overlay");
+	// 	certificationModals.forEach((modal) => {
+	// 	  modal.addEventListener("click", (event) => {
+	// 		event.preventDefault();
+	// 		alert("More details about this certification will be available soon!");
+	// 	  });
+	// 	});
+	//   });
 
 	/*---------------------------------------------------- */
 	/*	Masonry
